@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* opacity: 0 !important; */
+	background: linear-gradient(to bottom, #4b5563, #111827);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+	background: linear-gradient(transparent, hsl(0, 0%, 100%));
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(transparent, hsl(0, 0%, 45%));
+}
+
+.cutoff-text {
+    max-lines: 3;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
